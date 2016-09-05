@@ -1,0 +1,3 @@
+[submodule "lplib"]
+	path = lplib
+	url = https://github.com/lpsusu/lplib
