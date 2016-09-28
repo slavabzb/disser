@@ -1,6 +1,9 @@
 [$Version]
 update_info=kile.upd:Kile1.5v1,kile.upd:Kile1.6v1,kile.upd:Kile1.7v1,kile.upd:Kile1.9v1,kile.upd:Kile1.9v2,kile.upd:Kile2.0v1,kile.upd:Kile2.0v2,kile.upd:Kile2.0v3,kile.upd:Kile2.0v4,kile.upd:Kile2.0v5
 
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
 [Document-Settings,URL=file:///home/vyacheslav/Documents/disser/paper/diploma.cls]
 Bookmarks=
 Highlighting=LaTeX
@@ -15,6 +18,39 @@ Mode=
 
 [Editor Ext]
 envIndentNumSpaces=4
+envIndentation=false
+
+[Favorite Profiles]
+Favorites=
+
+[FileBrowserWidget]
+Decoration position=0
+Previews=false
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+View Style=Simple
+listViewIconSize=0
+
+[Files]
+LastDocument[$e]=$HOME/Documents/disser/paper/main.tex
+lastDir[$e]=$HOME/
+
+[FilesOpenOnStart]
+DocsOpenOnStart0[$e]=$HOME/Documents/disser/paper/main.tex
+EncodingsOfDocsOpenOnStart0[$e]=windows-1251
+NoDOOS=1
+NoPOOS=1
+ProjectsOpenOnStart0[$e]=$HOME/Documents/disser/paper/paper.kilepr
+
+[Geometries]
+MainwindowHeight=1028
+MainwindowWidth=960
+horizontalSplitterLeft=123
+horizontalSplitterRight=831
+verticalSplitterBottom=218
+verticalSplitterTop=742
 
 [IncludeGraphics]
 imagemagick=true
@@ -118,25 +154,51 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KileConfigDialog]
+Height 1080=660
+Width 1920=897
+
 [KileMainWindow]
 Height 1080=1081
-State=AAAA/wAAAAD9AAAAAAAAA8AAAAPGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAAIV/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAAAAA8AAAAPGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAADj/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1920=960
 
 [MainWindow]
-Height 1080=980
-State=AAAA/wAAAAD9AAAAAAAABxwAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAADj/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+Height 1080=1028
+State=AAAA/wAAAAD9AAAAAAAAA8AAAAPGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAADj/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
-Width 1920=1820
+Width 1920=960
+
+[MostFrequentlyUsedSymbols]
+counts=
+paths=
+
+[Projects]
+File1[$e]=$HOME/Documents/disser/paper/paper.kilepr
+Name1[$e]=paper.kilepr
 
 [QuickPreview]
 convert=true
 dvipng=true
 
+[Recent Files]
+File1[$e]=$HOME/Documents/disser/paper/diploma.cls
+File2[$e]=/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File3[$e]=$HOME/Documents/disser/paper/main.tex
+File4[$e]=$HOME/Documents/disser/paper/paper.kilepr
+Name1[$e]=diploma.cls
+Name2[$e]=russianb.ldf
+Name3[$e]=main.tex
+Name4[$e]=paper.kilepr
+
 [Session Settings]
 Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Saved Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf,file:///home/vyacheslav/Documents/disser/paper/diploma.cls
+
+[Show]
+BottomBarSize=193
+SideBarSize=100
 
 [Structure]
 SvDefaultGraphicExt=png
@@ -939,6 +1001,12 @@ options=-no-pdf -src-specials -interaction=nonstopmode '%source'
 to=xdvi
 type=Process
 
+[ToolSelectAction]
+Compile=9
+Convert=0
+Quick=0
+View=4
+
 [Tools]
 Archive=Tar + gzip
 Asymptote=Default
@@ -1002,6 +1070,12 @@ ViewHTML=View,viewhtml
 ViewPDF=View,okular
 ViewPS=View,okular
 XeLaTeX=Compile,latex
+
+[User]
+nUserTags=0
+
+[VersionInfo]
+RCVersion=7
 
 [View-Settings,View=0,URL=file:///home/vyacheslav/Documents/disser/paper/diploma.cls]
 CursorColumn=0
