@@ -1,5 +1,14 @@
+Practice/Build*
+Standards/
+*~
 *.aux
 *.log
-*.backup
-*.log
-
+*.out
+*.toc
+*.bak
+*.synctex.gz
+*.bbl
+*.blg
+*.thm
+*.nav
+*.snm

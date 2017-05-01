@@ -19,6 +19,8 @@
 \newcommand\@ptsize{}
 
 \usepackage[pdftex]{graphicx}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
 \usepackage[russian]{babel}
 
 
