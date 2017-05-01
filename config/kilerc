@@ -16,6 +16,12 @@ Highlighting=None
 Indentation Mode=normal
 Mode=
 
+[Document-Settings,URL=file:///usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [Editor Ext]
 envIndentNumSpaces=4
 envIndentation=false
@@ -137,13 +143,13 @@ Line Modification=false
 Line Numbers=false
 Maximum Search History Size=100
 Persistent Selection=false
-Replacement Text History=
+Replacement Text History=симплекс-метод
 Scroll Bar Marks=false
 Scroll Bar Mini Map=false
 Scroll Bar Mini Map All=false
 Scroll Bar Mini Map Width=60
 Scroll Past End=false
-Search Pattern History=
+Search Pattern History=сингуляр,симплекс--метод,Симплекс-метод
 Search/Replace Flags=140
 Show Scrollbars=0
 Smart Copy Cut=false
@@ -184,17 +190,17 @@ dvipng=true
 
 [Recent Files]
 File1[$e]=$HOME/Documents/disser/paper/diploma.cls
-File2[$e]=/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
-File3[$e]=$HOME/Documents/disser/paper/main.tex
-File4[$e]=$HOME/Documents/disser/paper/paper.kilepr
+File2[$e]=$HOME/Documents/disser/paper/main.tex
+File3[$e]=$HOME/Documents/disser/paper/paper.kilepr
+File4[$e]=/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Name1[$e]=diploma.cls
-Name2[$e]=russianb.ldf
-Name3[$e]=main.tex
-Name4[$e]=paper.kilepr
+Name2[$e]=main.tex
+Name3[$e]=paper.kilepr
+Name4[$e]=babel.sty
 
 [Session Settings]
-Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
-Saved Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf,file:///home/vyacheslav/Documents/disser/paper/diploma.cls
+Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Saved Documents=file:///usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty,file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf,file:///home/vyacheslav/Documents/disser/paper/diploma.cls
 
 [Show]
 BottomBarSize=193
@@ -1086,5 +1092,11 @@ ViMarks=
 [View-Settings,View=0,URL=file:///usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf]
 CursorColumn=0
 CursorLine=0
+JumpList=
+ViMarks=
+
+[View-Settings,View=0,URL=file:///usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty]
+CursorColumn=0
+CursorLine=328
 JumpList=
 ViMarks=
