@@ -1,0 +1,34 @@
+\section{Тест}
+\label{test}
+
+В данной главе рассматриваются особенности реализации параллельного алгоритма обратного симплекс-метода на сравнительно новом языке для технических расчетов Julia.
+
+Прежде, чем переходить к детальному описанию и обсуждению кода, рассмотрим кратко некоторые возможности этого языка.
+
+%\input{julia_intro}
+
+\begin{table}[]
+\centering
+\begin{tabular}{lrrr|rrr|rr|}
+\cline{5-9}
+                               & \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}         & \multicolumn{1}{l|}{}       & \multicolumn{5}{c|}{Ускорение по отношению}                                                                                                         \\ \cline{5-9} 
+                               & \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}         & \multicolumn{1}{l|}{}       & \multicolumn{3}{c|}{К 1 ядру}                                                           & \multicolumn{2}{c|}{К Clp}                                \\ \hline
+\multicolumn{1}{|l|}{ЗЛП}      & \multicolumn{1}{l}{Строк} & \multicolumn{1}{l}{Колонок} & \multicolumn{1}{l|}{Эл-тов} & \multicolumn{1}{l}{2 ядра} & \multicolumn{1}{l}{4 ядра} & \multicolumn{1}{l|}{8 ядер} & \multicolumn{1}{l}{1 ядро} & \multicolumn{1}{l|}{8 ядер} \\ \hline
+\multicolumn{1}{|l|}{25fv47}   & \multicolumn{1}{r}{822}   & \multicolumn{1}{r}{1571}    & 11127                       & 1.15                        & 1.00                        & 0.72                        & 0.67                        & 0.35                        \\
+\multicolumn{1}{|l|}{80bau3b}  & \multicolumn{1}{r}{2263}  & \multicolumn{1}{r}{9799}    & 29063                       & 0.88                        & 1.09                        & 0.84                        & 0.33                        & 0.27                        \\
+\multicolumn{1}{|l|}{cre-b}    & \multicolumn{1}{r}{9649}  & \multicolumn{1}{r}{72447}   & 328542                      & 1.05                        & 1.28                        & 1.12                        & 1.04                        & 1.31                        \\
+\multicolumn{1}{|l|}{cre-d}    & \multicolumn{1}{r}{8927}  & \multicolumn{1}{r}{69980}   & 312626                      & 1.25                        & 1.29                        & 1.65                        & 0.84                        & 1.69                        \\
+\multicolumn{1}{|l|}{degen3}   & \multicolumn{1}{r}{1504}  & \multicolumn{1}{r}{1818}    & 26230                       & 1.35                        & 1.15                        & 1.08                        & 0.25                        & 0.31                        \\
+\multicolumn{1}{|l|}{fit2p}    & \multicolumn{1}{r}{3001}  & \multicolumn{1}{r}{13525}   & 60784                       & 0.93                        & 0.94                        & 0.94                        & 0.58                        & 0.37                        \\
+\multicolumn{1}{|l|}{osa-14}   & \multicolumn{1}{r}{2338}  & \multicolumn{1}{r}{52460}   & 367220                      & 1.05                        & 0.81                        & 1.11                        & 0.31                        & 0.07                        \\
+\multicolumn{1}{|l|}{osa-30}   & \multicolumn{1}{r}{4351}  & \multicolumn{1}{r}{100024}  & 700160                      & 1.00                        & 1.05                        & 0.81                        & 0.27                        & 0.10                        \\
+\multicolumn{1}{|l|}{pds-06}   & \multicolumn{1}{r}{9882}  & \multicolumn{1}{r}{28655}   & 82269                       & 1.57                        & 2.14                        & 2.96                        & 0.44                        & 1.37                        \\
+\multicolumn{1}{|l|}{pds-10}   & \multicolumn{1}{r}{16559} & \multicolumn{1}{r}{48763}   & 140063                      & 1.23                        & 1.85                        & 1.93                        & 0.43                        & 1.13                        \\
+\multicolumn{1}{|l|}{qap8}     & \multicolumn{1}{r}{913}   & \multicolumn{1}{r}{1632}    & 8304                        & 1.37                        & 1.33                        & 1.68                        & 0.24                        & 0.65                        \\
+\multicolumn{1}{|l|}{stocfor3} & \multicolumn{1}{r}{16676} & \multicolumn{1}{r}{15695}   & 74004                       & 1.77                        & 2.52                        & 3.52                        & 0.20                        & 0.54                        \\
+\multicolumn{1}{|l|}{truss}    & \multicolumn{1}{r}{1001}  & \multicolumn{1}{r}{8806}    & 36642                       & 0.88                        & 1.09                        & 1.00                        & 0.45                        & 0.68                        \\ \hline
+\multicolumn{1}{|l|}{Среднее}  & \multicolumn{1}{r}{}      & \multicolumn{1}{r}{}        &                             & 1.19                        & 1.35                        & 1.49                        & 0.46                        & 0.68                        \\ \hline
+\end{tabular}
+\caption{Полученное ускорение (до 8 ядер включительно) и производительность по отношению к Clp}
+\label{tb:perf}
+\end{table}
