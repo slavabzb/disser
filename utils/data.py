@@ -14,6 +14,6 @@ trans82= np.array([0.20, 0.17, 1.21, 1.46, 0.29, 0.40, 0.12, 0.16, 1.37, 0.96, 0
 
 cores1 = trans1
 cores2 = trans2
-cores4 = trans1
+cores4 = trans4
 cores8 = trans8
 cores82= trans82
