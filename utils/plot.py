@@ -12,5 +12,5 @@ def plot():
         plt.plot(ncores, point)
     plt.xticks(ncores)
     plt.xlabel("Количество потоков")
-    plt.ylabel("Ускорение (нормализация по СКО)")
+    plt.ylabel("Ускорение")
     plt.savefig(os.path.join("plots", "parallel.png"), dpi=480)
